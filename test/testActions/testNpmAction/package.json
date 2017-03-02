@@ -1,0 +1,5 @@
+{
+  "name": "test_npm_action",
+  "version": "1.0.0",
+  "main": "testNpmAction.js"
+}

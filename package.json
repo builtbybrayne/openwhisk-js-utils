@@ -1,0 +1,38 @@
+{
+  "name": "openwhisk-js-utils",
+  "version": "1.0.0",
+  "description": "Some js utils to help interact with OpenWhisk via the official SDK",
+  "main": "src/index.js",
+  "scripts": {
+    "test:hint": "parallelshell 'npm run mocha' 'npm run watch:jshint'",
+    "watch:jshint": "watch 'jshint src --reporter=./node_modules/jshint-stylish/index.js' src/",
+    "mocha": "mocha test/**/*.spec.js --watch",
+    "test": "mocha test/**/*.spec.js",
+    "relink": "npm unlink && npm link",
+    "build": "npm run relink"
+  },
+  "repository": "perchten/openwhisk-js-utils",
+  "author": {
+    "name": "Alastair Brayne",
+    "email": "al@builtbybrayne.com",
+    "url": "http://builtbybrayne.com"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "chai-as-promised": "^6.0.0",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.1.0",
+    "mocha": "^2.3.4",
+    "nock": "^9.0.9",
+    "parallelshell": "^2.0.0",
+    "sinon": "^1.17.7",
+    "sinon-as-promised": "^4.0.2",
+    "sinon-chai": "^2.8.0",
+    "watch": "^0.17.1"
+  },
+  "dependencies": {
+    "es6-promisify": "^5.0.0",
+    "lodash.partial": "^4.2.1"
+  }
+}
