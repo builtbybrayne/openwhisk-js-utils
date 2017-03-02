@@ -1,6 +1,6 @@
 {
   "name": "openwhisk-js-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Some js utils to help interact with OpenWhisk via the official SDK",
   "main": "src/index.js",
   "scripts": {
